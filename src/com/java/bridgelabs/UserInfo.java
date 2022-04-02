@@ -44,4 +44,21 @@ public class UserInfo
             System.out.println("Please enter valid last name : ");
         }
     }
+
+    /*
+     Added email id method to check email id
+   */
+    public void userEmailId()
+    {
+        System.out.println("Enter email id : ");
+        String emailId = scanner.next();
+        boolean result = Pattern.matches("[a-z A-Z 0-9]+[@][a-z A-Z 0-9]+[.][a-z]{2,3}$",emailId);
+        if (result)
+        {
+            System.out.println("Correct");
+        }
+        else {
+            System.out.println("Please enter correct email id : " );
+        }
+    }
 }

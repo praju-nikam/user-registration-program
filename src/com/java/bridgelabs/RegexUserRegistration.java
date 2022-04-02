@@ -11,6 +11,6 @@ public class RegexUserRegistration
         UserInfo userInfo = new UserInfo();
         userInfo.userFirstName();
         userInfo.userLastName();
-
+        userInfo.userEmailId();
     }
 }
