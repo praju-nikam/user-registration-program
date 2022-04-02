@@ -61,4 +61,20 @@ public class UserInfo
             System.out.println("Please enter correct email id : " );
         }
     }
+
+    /*
+        Added phone number method to check phone number
+    */
+    public void userPhoneNumber()
+    {
+        System.out.println("Enter phone number : ");
+        String phoneNumber = scanner.next();
+        boolean result = Pattern.matches("[6-9]{1}[0-9]{9}",phoneNumber);
+        if (result) {
+            System.out.println("Correct");
+        }
+        else {
+            System.out.println("Please enter correct phone number");
+        }
+    }
 }
