@@ -77,4 +77,22 @@ public class UserInfo
             System.out.println("Please enter correct phone number");
         }
     }
+
+     /*
+        Added Password method to check password
+    */
+
+    public void userPassword()
+    {
+        System.out.println("Enter password : ");
+        String password = scanner.next();
+        boolean result =  Pattern.matches( "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$",password);
+
+        if (result) {
+            System.out.println("Correct");
+        }
+        else {
+            System.out.println("Please enter correct password");
+        }
+    }
 }
