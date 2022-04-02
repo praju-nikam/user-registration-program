@@ -10,6 +10,7 @@ public class RegexUserRegistration
         System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-Welcome to User Registration -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
         UserInfo userInfo = new UserInfo();
         userInfo.userFirstName();
+        userInfo.userLastName();
 
     }
 }
