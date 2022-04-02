@@ -13,5 +13,6 @@ public class RegexUserRegistration
         userInfo.userLastName();
         userInfo.userEmailId();
         userInfo.userPhoneNumber();
+        userInfo.userPassword();
     }
 }
